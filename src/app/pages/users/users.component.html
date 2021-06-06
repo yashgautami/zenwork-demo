@@ -1,1 +1,33 @@
-<p>users works!</p>
+<div>
+    <div class="text-right">
+        <button (click)="edit()" color="primary" mat-raised-button class="app-btn">
+            Add
+        </button>
+    </div>
+    <div>
+        <table class="app-table">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Contact</th>
+                    <th>Company</th>
+                </tr>
+            </thead>
+            <tbody>
+                <ng-container *ngFor="let user of users">
+                    <tr>
+                        <td class="text-center">
+                            <mat-icon (click)="edit(user)" class="action-btn">mode_edit</mat-icon>
+                        </td>
+                        <td>{{user?.name}}</td>
+                        <td>{{user?.email}}</td>
+                        <td>{{user?.phone}}</td>
+                        <td>{{user?.company?.name}}</td>
+                    </tr>
+                </ng-container>
+            </tbody>
+        </table>
+    </div>
+</div>

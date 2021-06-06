@@ -10,6 +10,9 @@ import { SidebarComponent } from './shared/components/sidebar/sidebar.component'
 import { UsersComponent } from './pages/users/users.component';
 import { PostsComponent } from './pages/posts/posts.component';
 import { PhotosComponent } from './pages/photos/photos.component';
+import { HttpClientModule } from '@angular/common/http';
+import { EditUsersComponent } from './pages/users/edit-users/edit-users.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,13 +21,16 @@ import { PhotosComponent } from './pages/photos/photos.component';
     SidebarComponent,
     UsersComponent,
     PostsComponent,
-    PhotosComponent
+    PhotosComponent,
+    EditUsersComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
