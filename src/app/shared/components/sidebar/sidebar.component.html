@@ -1,0 +1,26 @@
+<img class="avatar mat-elevation-z8" src="{{user?.thumb}}" />
+
+<h4 class="name">{{user?.name}}</h4>
+<p class="designation">{{user?.designation}}</p>
+
+<mat-divider></mat-divider>
+
+<button mat-button class="menu-button text-left" [routerLink]="['users']" routerLinkActive="active">
+    <mat-icon>group</mat-icon>
+    <span>Users</span>
+</button>
+<button mat-button class="menu-button text-left" [routerLink]="['posts']" routerLinkActive="active">
+    <mat-icon>post_add</mat-icon>
+    <span>Posts</span>
+</button>
+<button mat-button class="menu-button text-left" [routerLink]="['photos']" routerLinkActive="active">
+    <mat-icon>photo_library</mat-icon>
+    <span>Photos</span>
+</button>
+
+<mat-divider></mat-divider>
+
+<button mat-button class="menu-button text-left">
+    <mat-icon>help</mat-icon>
+    <span>Help</span>
+</button>
