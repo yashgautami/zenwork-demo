@@ -1,1 +1,31 @@
-<p>photos works!</p>
+<div>
+    <div class="text-right">
+        <button (click)="edit()" color="primary" mat-raised-button class="app-btn">
+            Add
+        </button>
+    </div>
+    <div>
+        <table class="app-table">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Title</th>
+                    <th>URL</th>
+                    <th>Thumbnail</th>
+                </tr>
+            </thead>
+            <tbody>
+                <ng-container *ngFor="let photo of photos">
+                    <tr>
+                        <td class="text-center">
+                            <mat-icon (click)="edit(photo)" class="action-btn">mode_edit</mat-icon>
+                        </td>
+                        <td>{{photo?.title}}</td>
+                        <td><a href="{{photo?.url}}" target="_blank">URL</a></td>
+                        <td><a href="{{photo?.thumbnailUrl}}" target="_blank">Thumbnail</a></td>
+                    </tr>
+                </ng-container>
+            </tbody>
+        </table>
+    </div>
+</div>

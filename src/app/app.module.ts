@@ -14,6 +14,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { EditUsersComponent } from './pages/users/edit-users/edit-users.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { EditPostsComponent } from './pages/posts/edit-posts/edit-posts.component';
+import { EditPhotosComponent } from './pages/photos/edit-photos/edit-photos.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { EditPostsComponent } from './pages/posts/edit-posts/edit-posts.componen
     PostsComponent,
     PhotosComponent,
     EditUsersComponent,
-    EditPostsComponent
+    EditPostsComponent,
+    EditPhotosComponent
   ],
   imports: [
     BrowserModule,
