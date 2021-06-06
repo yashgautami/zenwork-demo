@@ -1,0 +1,32 @@
+<div class="popup-header">
+    <h3><b>{{isNew ? 'Add User' : 'Edit User'}}</b></h3>
+    <mat-icon class="action-btn" (click)="close()">close</mat-icon>
+</div>
+<div class="popup-body">
+    <form [formGroup]="formGroup">
+        <div class="form-group">
+            <div class="form-control" >
+                <mat-form-field>
+                    <input matInput formControlName="title" placeholder="Title" />
+                </mat-form-field>
+            </div>
+            <div class="form-control" >
+                <mat-form-field>
+                    <textarea matInput formControlName="body" placeholder="Body" ></textarea>
+                </mat-form-field>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="popup-footer">
+    <button (click)="save()" color="primary" mat-raised-button class="app-btn" [disabled]="formGroup?.invalid">
+        Save
+    </button>
+</div>
+<div *ngIf="formValueLog" class="text-left">
+    <br/><br/>
+    <div>Here is the form value: (As there is no put/post api)</div>
+    <div class="text-left">
+        <pre>{{formValueLog | json}}</pre>
+    </div>
+</div>

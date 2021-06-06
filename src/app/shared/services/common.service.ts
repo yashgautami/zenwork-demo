@@ -13,4 +13,8 @@ export class CommonService {
     return this.http.get(this.api_version + 'users');
   }
 
+  getPosts() {
+    return this.http.get(this.api_version + 'posts');
+  }
+
 }

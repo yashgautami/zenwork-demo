@@ -13,6 +13,7 @@ import { PhotosComponent } from './pages/photos/photos.component';
 import { HttpClientModule } from '@angular/common/http';
 import { EditUsersComponent } from './pages/users/edit-users/edit-users.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { EditPostsComponent } from './pages/posts/edit-posts/edit-posts.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     UsersComponent,
     PostsComponent,
     PhotosComponent,
-    EditUsersComponent
+    EditUsersComponent,
+    EditPostsComponent
   ],
   imports: [
     BrowserModule,
