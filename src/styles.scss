@@ -1,5 +1,3 @@
-/* You can add global styles to this file, and also import other style files */
-
 html,
 body {
     height: 100%;
@@ -57,11 +55,6 @@ p {
 .toolbar #twitter-logo:hover {
     opacity: 0.8;
 }
-
-//   .content {
-//     height: calc(100vh - 60px);
-//     overflow: auto;
-//   }
 
 svg.material-icons {
     height: 24px;
@@ -290,21 +283,16 @@ svg#clouds {
     }
 }
 
-/////////////
-
 mat-toolbar {
     background: #004a9f !important;
     color: white !important;
 }
 
 mat-sidenav {
-    // margin: 16px;
     width: 200px;
     border-right: none;
     background: #002b5c;
     color: white;
-    // border-radius: 10px;
-    // padding: 12px;
     text-align: center;
 }
 
@@ -313,14 +301,6 @@ mat-sidenav {
     border-radius: 3px;
     margin: 16px;
     overflow: auto;
-    // margin-left: 32px;
-
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-
-    // font-size: 2rem;
-    // color: lightgray;
 }
 
 mat-sidenav-container {

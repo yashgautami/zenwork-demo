@@ -1,6 +1,14 @@
-# ZenworkDemo
+# Zenwork Demo
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.3.
+## About Web-app
+
+This web-app mainly contains three modules
+`Users :` For list of Users
+`Posts :` For list of Posts
+`Photos :` For list of Photos
+
+- Used material theme for generate this web-app
+- This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.3.
 
 ## Development server
 

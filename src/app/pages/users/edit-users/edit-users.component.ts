@@ -17,7 +17,6 @@ export class EditUsersComponent implements OnInit {
   constructor(public dialogRef: MatDialogRef<EditUsersComponent>, @Inject(MAT_DIALOG_DATA) public data: any, private fb: FormBuilder) { }
 
   ngOnInit(): void {
-    console.log(this.data);
     this.buildForm();
   }
 
